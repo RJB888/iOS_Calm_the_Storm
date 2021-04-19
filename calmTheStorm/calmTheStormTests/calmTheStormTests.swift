@@ -2,11 +2,10 @@
 //  calmTheStormTests.swift
 //  calmTheStormTests
 //
-//  Created by ROBERT BRONSON on 4/16/21.
+//  Created by ROBERT BRONSON on 4/19/21.
 //
 
 import XCTest
-@testable import calmTheStorm
 
 class calmTheStormTests: XCTestCase {
 
@@ -25,7 +24,7 @@ class calmTheStormTests: XCTestCase {
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
-        self.measure {
+        measure {
             // Put the code you want to measure the time of here.
         }
     }
