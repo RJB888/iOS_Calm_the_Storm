@@ -7,17 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		193048B5262DBF6D00F9CC67 /* calmTheStormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 193048B4262DBF6D00F9CC67 /* calmTheStormTests.swift */; };
 		1980B8642629E31000B1AA13 /* calmTheStormApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1980B8632629E31000B1AA13 /* calmTheStormApp.swift */; };
 		1980B8662629E31000B1AA13 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1980B8652629E31000B1AA13 /* ContentView.swift */; };
 		1980B8682629E31200B1AA13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1980B8672629E31200B1AA13 /* Assets.xcassets */; };
 		1980B86B2629E31200B1AA13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1980B86A2629E31200B1AA13 /* Preview Assets.xcassets */; };
-		1980B8762629E31200B1AA13 /* calmTheStormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1980B8752629E31200B1AA13 /* calmTheStormTests.swift */; };
 		1980B8812629E31300B1AA13 /* calmTheStormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1980B8802629E31300B1AA13 /* calmTheStormUITests.swift */; };
 		3F817D33262D1A9800F54B87 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F817D32262D1A9800F54B87 /* CustomColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1980B8722629E31200B1AA13 /* PBXContainerItemProxy */ = {
+		193048B7262DBF6D00F9CC67 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1980B8582629E31000B1AA13 /* Project object */;
 			proxyType = 1;
@@ -34,13 +34,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		193048B2262DBF6D00F9CC67 /* calmTheStormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calmTheStormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		193048B4262DBF6D00F9CC67 /* calmTheStormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calmTheStormTests.swift; sourceTree = "<group>"; };
+		193048B6262DBF6D00F9CC67 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1980B8602629E31000B1AA13 /* calmTheStorm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = calmTheStorm.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1980B8632629E31000B1AA13 /* calmTheStormApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calmTheStormApp.swift; sourceTree = "<group>"; };
 		1980B8652629E31000B1AA13 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1980B8672629E31200B1AA13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1980B86A2629E31200B1AA13 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1980B86C2629E31200B1AA13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1980B8712629E31200B1AA13 /* calmTheStormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calmTheStormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1980B8752629E31200B1AA13 /* calmTheStormTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calmTheStormTests.swift; sourceTree = "<group>"; };
 		1980B8772629E31200B1AA13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1980B87C2629E31200B1AA13 /* calmTheStormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calmTheStormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -50,14 +52,14 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1980B85D2629E31000B1AA13 /* Frameworks */ = {
+		193048AF262DBF6D00F9CC67 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1980B86E2629E31200B1AA13 /* Frameworks */ = {
+		1980B85D2629E31000B1AA13 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,12 +76,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		193048B3262DBF6D00F9CC67 /* calmTheStormTests */ = {
+			isa = PBXGroup;
+			children = (
+				193048B4262DBF6D00F9CC67 /* calmTheStormTests.swift */,
+				193048B6262DBF6D00F9CC67 /* Info.plist */,
+			);
+			path = calmTheStormTests;
+			sourceTree = "<group>";
+		};
 		1980B8572629E31000B1AA13 = {
 			isa = PBXGroup;
 			children = (
 				1980B8622629E31000B1AA13 /* calmTheStorm */,
 				1980B8742629E31200B1AA13 /* calmTheStormTests */,
 				1980B87F2629E31300B1AA13 /* calmTheStormUITests */,
+				193048B3262DBF6D00F9CC67 /* calmTheStormTests */,
 				1980B8612629E31000B1AA13 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,8 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				1980B8602629E31000B1AA13 /* calmTheStorm.app */,
-				1980B8712629E31200B1AA13 /* calmTheStormTests.xctest */,
 				1980B87C2629E31200B1AA13 /* calmTheStormUITests.xctest */,
+				193048B2262DBF6D00F9CC67 /* calmTheStormTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,6 +148,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		193048B1262DBF6D00F9CC67 /* calmTheStormTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 193048B9262DBF6D00F9CC67 /* Build configuration list for PBXNativeTarget "calmTheStormTests" */;
+			buildPhases = (
+				193048AE262DBF6D00F9CC67 /* Sources */,
+				193048AF262DBF6D00F9CC67 /* Frameworks */,
+				193048B0262DBF6D00F9CC67 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				193048B8262DBF6D00F9CC67 /* PBXTargetDependency */,
+			);
+			name = calmTheStormTests;
+			productName = calmTheStormTests;
+			productReference = 193048B2262DBF6D00F9CC67 /* calmTheStormTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		1980B85F2629E31000B1AA13 /* calmTheStorm */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1980B8852629E31300B1AA13 /* Build configuration list for PBXNativeTarget "calmTheStorm" */;
@@ -152,24 +182,6 @@
 			productName = calmTheStorm;
 			productReference = 1980B8602629E31000B1AA13 /* calmTheStorm.app */;
 			productType = "com.apple.product-type.application";
-		};
-		1980B8702629E31200B1AA13 /* calmTheStormTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 1980B8882629E31300B1AA13 /* Build configuration list for PBXNativeTarget "calmTheStormTests" */;
-			buildPhases = (
-				1980B86D2629E31200B1AA13 /* Sources */,
-				1980B86E2629E31200B1AA13 /* Frameworks */,
-				1980B86F2629E31200B1AA13 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1980B8732629E31200B1AA13 /* PBXTargetDependency */,
-			);
-			name = calmTheStormTests;
-			productName = calmTheStormTests;
-			productReference = 1980B8712629E31200B1AA13 /* calmTheStormTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		1980B87B2629E31200B1AA13 /* calmTheStormUITests */ = {
 			isa = PBXNativeTarget;
@@ -198,12 +210,12 @@
 				LastSwiftUpdateCheck = 1240;
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					1980B85F2629E31000B1AA13 = {
-						CreatedOnToolsVersion = 12.4;
-					};
-					1980B8702629E31200B1AA13 = {
+					193048B1262DBF6D00F9CC67 = {
 						CreatedOnToolsVersion = 12.4;
 						TestTargetID = 1980B85F2629E31000B1AA13;
+					};
+					1980B85F2629E31000B1AA13 = {
+						CreatedOnToolsVersion = 12.4;
 					};
 					1980B87B2629E31200B1AA13 = {
 						CreatedOnToolsVersion = 12.4;
@@ -225,26 +237,26 @@
 			projectRoot = "";
 			targets = (
 				1980B85F2629E31000B1AA13 /* calmTheStorm */,
-				1980B8702629E31200B1AA13 /* calmTheStormTests */,
 				1980B87B2629E31200B1AA13 /* calmTheStormUITests */,
+				193048B1262DBF6D00F9CC67 /* calmTheStormTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		193048B0262DBF6D00F9CC67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1980B85E2629E31000B1AA13 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				1980B86B2629E31200B1AA13 /* Preview Assets.xcassets in Resources */,
 				1980B8682629E31200B1AA13 /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1980B86F2629E31200B1AA13 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +270,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		193048AE262DBF6D00F9CC67 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				193048B5262DBF6D00F9CC67 /* calmTheStormTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		1980B85C2629E31000B1AA13 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -265,14 +285,6 @@
 				1980B8662629E31000B1AA13 /* ContentView.swift in Sources */,
 				3F817D33262D1A9800F54B87 /* CustomColors.swift in Sources */,
 				1980B8642629E31000B1AA13 /* calmTheStormApp.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		1980B86D2629E31200B1AA13 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1980B8762629E31200B1AA13 /* calmTheStormTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,10 +299,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1980B8732629E31200B1AA13 /* PBXTargetDependency */ = {
+		193048B8262DBF6D00F9CC67 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1980B85F2629E31000B1AA13 /* calmTheStorm */;
-			targetProxy = 1980B8722629E31200B1AA13 /* PBXContainerItemProxy */;
+			targetProxy = 193048B7262DBF6D00F9CC67 /* PBXContainerItemProxy */;
 		};
 		1980B87E2629E31200B1AA13 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -300,6 +312,44 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		193048BA262DBF6D00F9CC67 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = calmTheStormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mobas.calmTheStormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calmTheStorm.app/calmTheStorm";
+			};
+			name = Debug;
+		};
+		193048BB262DBF6D00F9CC67 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = calmTheStormTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = mobas.calmTheStormTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calmTheStorm.app/calmTheStorm";
+			};
+			name = Release;
+		};
 		1980B8832629E31300B1AA13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -458,48 +508,6 @@
 			};
 			name = Release;
 		};
-		1980B8892629E31300B1AA13 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = calmTheStormTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = mobas.calmTheStormTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calmTheStorm.app/calmTheStorm";
-			};
-			name = Debug;
-		};
-		1980B88A2629E31300B1AA13 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = calmTheStormTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = mobas.calmTheStormTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/calmTheStorm.app/calmTheStorm";
-			};
-			name = Release;
-		};
 		1980B88C2629E31300B1AA13 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -541,6 +549,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		193048B9262DBF6D00F9CC67 /* Build configuration list for PBXNativeTarget "calmTheStormTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				193048BA262DBF6D00F9CC67 /* Debug */,
+				193048BB262DBF6D00F9CC67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		1980B85B2629E31000B1AA13 /* Build configuration list for PBXProject "calmTheStorm" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -555,15 +572,6 @@
 			buildConfigurations = (
 				1980B8862629E31300B1AA13 /* Debug */,
 				1980B8872629E31300B1AA13 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		1980B8882629E31300B1AA13 /* Build configuration list for PBXNativeTarget "calmTheStormTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				1980B8892629E31300B1AA13 /* Debug */,
-				1980B88A2629E31300B1AA13 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
