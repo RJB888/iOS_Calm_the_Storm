@@ -11,21 +11,22 @@ struct ContentView: View {
     var body: some View {
         
         NavigationView{
-            ZStack{
+           ZStack{
                 Color.Ivory.ignoresSafeArea(.all)
                 VStack{
                     HStack{
                         Text("Calm The Storm")
-                            .font(.custom("Avenir", size: 40))
+                            .font(.custom("Avenir", size: 30))
                             .bold()
-                            .padding(.top)
+                            .offset( y:-70)
                         
                         Image(systemName: "cloud.sun.fill")
                             .renderingMode(.template)
                             .font(.system(size: 30))
-                        
+                            .offset( y:-75)
+                            
                     }
-                    Spacer()
+                    
                     NavigationLink(
                         destination: Text("Destination"),
                         label: {
@@ -69,17 +70,18 @@ struct ContentView: View {
                         label: {
                             HStack{
                                 VStack{
-                                    Image(systemName: "cloud.fill")
+                                    Image(systemName: "smoke.fill")
                                         .renderingMode(.template)
                                         .font(.system(size: 32))
-                                        .offset(y: 10)
-                                    
+                                        .offset(x: -9, y: 5.0)
                                     Image(systemName: "triangle")
-                                        .font(.system(size: 40))
+                                        .font(.system(size: 30))
+                                        .offset(y: -5)
                                 }
                                 
                                 Text("Volcano")
                                     .font(.largeTitle)
+                                    .offset(y: 10)
                             }
                         })
                     Spacer()
