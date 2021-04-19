@@ -13,6 +13,7 @@
 		1980B86B2629E31200B1AA13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1980B86A2629E31200B1AA13 /* Preview Assets.xcassets */; };
 		1980B8762629E31200B1AA13 /* calmTheStormTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1980B8752629E31200B1AA13 /* calmTheStormTests.swift */; };
 		1980B8812629E31300B1AA13 /* calmTheStormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1980B8802629E31300B1AA13 /* calmTheStormUITests.swift */; };
+		3F817D33262D1A9800F54B87 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F817D32262D1A9800F54B87 /* CustomColors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		1980B87C2629E31200B1AA13 /* calmTheStormUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = calmTheStormUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1980B8802629E31300B1AA13 /* calmTheStormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calmTheStormUITests.swift; sourceTree = "<group>"; };
 		1980B8822629E31300B1AA13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F817D32262D1A9800F54B87 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				1980B8672629E31200B1AA13 /* Assets.xcassets */,
 				1980B86C2629E31200B1AA13 /* Info.plist */,
 				1980B8692629E31200B1AA13 /* Preview Content */,
+				3F817D32262D1A9800F54B87 /* CustomColors.swift */,
 			);
 			path = calmTheStorm;
 			sourceTree = "<group>";
@@ -260,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1980B8662629E31000B1AA13 /* ContentView.swift in Sources */,
+				3F817D33262D1A9800F54B87 /* CustomColors.swift in Sources */,
 				1980B8642629E31000B1AA13 /* calmTheStormApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
