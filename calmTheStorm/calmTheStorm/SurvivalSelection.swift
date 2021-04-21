@@ -9,7 +9,8 @@ import SwiftUI
 
 struct SurvivalSelection: View {
     var body: some View {
-        
+    ZStack{
+        Color.Ivory.ignoresSafeArea(.all)
         VStack{
         Text("Survival Information")
             .font(.custom("Avenir", size: 30))
@@ -30,6 +31,7 @@ struct SurvivalSelection: View {
         .padding()
         }
     }
+  }
 }
 
 struct SurvivalSelection_Previews: PreviewProvider {
