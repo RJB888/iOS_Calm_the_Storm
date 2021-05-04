@@ -5,7 +5,6 @@
 //  Created by ROBERT BRONSON on 4/16/21.
 //
 
-
 import SwiftUI
 
 struct ContentView: View {
@@ -25,7 +24,6 @@ struct ContentView: View {
                             .renderingMode(.template)
                             .font(.system(size: 30))
                             .offset( y:-75)
-                            
                     }
                     
                     NavigationLink(
@@ -38,9 +36,13 @@ struct ContentView: View {
                                 Text("Tornado")
                                     .font(.largeTitle)
                             }
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .background(Color.gray)
+                            .opacity(0.8)
                             
                         }
                     )
+                    
                     Spacer()
                     NavigationLink(
                         destination: Text("Destination"),
@@ -52,7 +54,9 @@ struct ContentView: View {
                                 Text("Wildfire")
                                     .font(.largeTitle)
                             }
-                            
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .background(Color.gray)
+                            .opacity(0.8)
                         })
                     Spacer()
                     NavigationLink(
@@ -65,6 +69,9 @@ struct ContentView: View {
                                 Text("Earthquake")
                                     .font(.largeTitle)
                             }
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .background(Color.gray)
+                            .opacity(0.8)
                         })
                     Spacer()
                     NavigationLink(
@@ -80,15 +87,17 @@ struct ContentView: View {
                                         .font(.system(size: 30))
                                         .offset(y: -5)
                                 }
-                                
                                 Text("Volcano")
                                     .font(.largeTitle)
                                     .offset(y: 10)
                             }
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .background(Color.gray)
+                            .opacity(0.8)
                         })
                     Spacer()
                 }
-            }
+           }
         }
         .buttonStyle(PlainButtonStyle())
     }
