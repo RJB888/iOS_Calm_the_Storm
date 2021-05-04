@@ -33,7 +33,7 @@ struct ContentView: View {
                             HStack{
                                 Image(systemName: "tornado")
                                     .renderingMode(.template)
-                                    .font(.system(size: 40))
+                                    .font(.system(size: 30))
                                 Text("Tornado")
                                     .font(.largeTitle)
                             }
@@ -46,7 +46,7 @@ struct ContentView: View {
                             HStack{
                                 Image(systemName: "flame.fill")
                                     .renderingMode(.template)
-                                    .font(.system(size: 40))
+                                    .font(.system(size: 30))
                                 Text("Wildfire")
                                     .font(.largeTitle)
                             }
@@ -59,7 +59,7 @@ struct ContentView: View {
                             HStack{
                                 Image(systemName: "waveform.path.ecg")
                                     .renderingMode(.template)
-                                    .font(.system(size: 40))
+                                    .font(.system(size: 30))
                                 Text("Earthquake")
                                     .font(.largeTitle)
                             }
@@ -72,16 +72,17 @@ struct ContentView: View {
                                 VStack{
                                     Image(systemName: "smoke.fill")
                                         .renderingMode(.template)
-                                        .font(.system(size: 32))
-                                        .offset(x: -9, y: 5.0)
-                                    Image(systemName: "triangle")
                                         .font(.system(size: 30))
-                                        .offset(y: -5)
+                                        .offset(x: -9, y: -8)
+                                    Image(systemName: "triangle")
+                                        .font(.system(size: 25))
+                                        .offset(y: -15)
                                 }
                                 
                                 Text("Volcano")
                                     .font(.largeTitle)
-                                    .offset(y: 10)
+                                    .offset(y: -3)
+                                
                             }
                         })
                     Spacer()
