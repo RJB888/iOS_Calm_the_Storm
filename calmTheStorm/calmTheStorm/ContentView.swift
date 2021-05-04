@@ -39,7 +39,8 @@ struct ContentView: View {
                                     .font(.largeTitle)
                             }
                             
-                        })
+                        }
+                    )
                     Spacer()
                     NavigationLink(
                         destination: Text("Destination"),
