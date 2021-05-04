@@ -11,25 +11,37 @@ struct SurvivalSelection: View {
     var body: some View {
     ZStack{
         Color.Ivory.ignoresSafeArea(.all)
+        
         VStack{
         Text("Survival Information")
             .font(.custom("Avenir", size: 30))
             .bold()
-            .offset( y:-70)
-        
+            .offset( y:-180)
+            
+            
+            HStack{
+                Image(systemName: "info.circle")
+                    .font(.system(size: 30))
+                    .offset( y:-50)
         Button("Survival Info"){
-
         }
+        .font(.custom("Avenir", size: 28))
         .accentColor(.gray)
-        .padding()
-        .cornerRadius(20)
+        .padding(3)
+        .offset( y:-50)
+            }
         
+            HStack{
+                Image(systemName: "map")
+                    .font(.system(size: 30))
         Button("Map Info"){
 
         }
+        .font(.custom("Avenir", size: 28))
         .accentColor(.gray)
-        .padding()
+        .padding(10)
         }
+      }
     }
   }
 }

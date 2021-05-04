@@ -8,11 +8,16 @@
 import SwiftUI
 
 struct CheckListView: View{
+    
     var body: some View{
+        
         List(checkListData){item in
             CheckView(isChecked: item.isChecked, title: item.title)
+           
         }
-        .font(.title)
+        
+        .font(.title)            
+    
     }
 }
 
