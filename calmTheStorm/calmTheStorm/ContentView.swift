@@ -39,7 +39,9 @@ struct ContentView: View {
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             .background(Color.gray)
                             .opacity(0.8)
-                            
+                            .cornerRadius(25)
+                            .fixedSize(horizontal: true, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+
                         }
                     )
                     
@@ -57,6 +59,10 @@ struct ContentView: View {
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             .background(Color.gray)
                             .opacity(0.8)
+                            .cornerRadius(25)
+                            .fixedSize(horizontal: true, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+
+
                         })
                     Spacer()
                     NavigationLink(
@@ -72,6 +78,9 @@ struct ContentView: View {
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             .background(Color.gray)
                             .opacity(0.8)
+                            .cornerRadius(25)
+                            .fixedSize(horizontal: true, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+
                         })
                     Spacer()
                     NavigationLink(
@@ -94,6 +103,10 @@ struct ContentView: View {
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             .background(Color.gray)
                             .opacity(0.8)
+                            .cornerRadius(25)
+                            .fixedSize(horizontal: true, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+
+
                         })
                     Spacer()
                 }
