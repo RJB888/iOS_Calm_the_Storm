@@ -8,18 +8,27 @@
 import SwiftUI
 
 struct CheckListView: View{
-    
     var body: some View{
-        
+        ZStack{
+            Color.Ivory.ignoresSafeArea(.all)
+            
+            VStack{
+            Text("Survival Kit")
+                .font(.custom("Avenir", size: 30))
+                .bold()
+                .padding()
+            
         List(checkListData){item in
             CheckView(isChecked: item.isChecked, title: item.title)
-           
         }
-        
-        .font(.title)            
-    
+                
+    }
+        .colorMultiply(Color.Ivory)
+        .font(.title)
+        }
     }
 }
+    
 
 struct CheckList_Previews: PreviewProvider{
     static var previews: some View{
