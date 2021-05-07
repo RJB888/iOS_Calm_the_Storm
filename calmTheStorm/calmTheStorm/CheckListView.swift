@@ -15,7 +15,7 @@ struct CheckListView: View{
             CheckView(isChecked: item.isChecked, title: item.title)
            
         }
-        
+        .colorMultiply(Color.Ivory)
         .font(.title)            
     
     }

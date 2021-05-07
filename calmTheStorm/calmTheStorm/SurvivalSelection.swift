@@ -18,14 +18,14 @@ struct SurvivalSelection: View {
             .bold()
             .offset( y:-180)
             
-            
+        
             HStack{
                 Image(systemName: "info.circle")
                     .font(.system(size: 30))
                     .offset( y:-50)
         Button("Survival Info"){
         }
-        
+        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
         .font(.custom("Avenir", size: 28))
         .accentColor(.black)
         .padding(3)
