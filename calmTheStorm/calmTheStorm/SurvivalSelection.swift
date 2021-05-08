@@ -18,7 +18,7 @@ struct SurvivalSelection: View {
             .bold()
             .offset( y:-180)
             
-            
+        
             HStack{
                 Image(systemName: "info.circle")
                     .font(.system(size: 30))
