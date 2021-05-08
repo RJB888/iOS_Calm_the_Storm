@@ -25,7 +25,7 @@ struct SurvivalSelection: View {
                     .offset( y:-50)
         Button("Survival Info"){
         }
-        
+        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
         .font(.custom("Avenir", size: 28))
         .accentColor(.black)
         .padding(3)
