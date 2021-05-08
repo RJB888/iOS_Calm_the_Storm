@@ -32,7 +32,7 @@ struct ContentView: View {
                             HStack{
                                 Image(systemName: "tornado")
                                     .renderingMode(.template)
-                                    .font(.system(size: 40))
+                                    .font(.system(size: 30))
                                 Text("Tornado")
                                     .font(.largeTitle)
                                     .frame(
@@ -54,7 +54,7 @@ struct ContentView: View {
                             HStack{
                                 Image(systemName: "flame.fill")
                                     .renderingMode(.template)
-                                    .font(.system(size: 40))
+                                    .font(.system(size: 30))
                                 Text("Wildfire")
                                     .font(.largeTitle)
                                     .frame(
@@ -77,7 +77,7 @@ struct ContentView: View {
                             HStack{
                                 Image(systemName: "waveform.path.ecg")
                                     .renderingMode(.template)
-                                    .font(.system(size: 40))
+                                    .font(.system(size: 30))
                                 Text("Earthquake")
                                     .font(.largeTitle)
                                     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,  maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
@@ -96,16 +96,16 @@ struct ContentView: View {
                                 VStack{
                                     Image(systemName: "smoke.fill")
                                         .renderingMode(.template)
-                                        .font(.system(size: 32))
-                                        .offset(x: -9, y: 5.0)
-                                    Image(systemName: "triangle")
                                         .font(.system(size: 30))
-                                        .offset(y: -5)
+                                        .offset(x: -9, y: -8)
+                                    Image(systemName: "triangle")
+                                        .font(.system(size: 25))
+                                        .offset(y: -15)
                                 }
                                 Text("Volcano")
                                     .font(.largeTitle)
-                                    .offset(y: 10)
                                     .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,  maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+
                             }
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             .background(Color.gray)
