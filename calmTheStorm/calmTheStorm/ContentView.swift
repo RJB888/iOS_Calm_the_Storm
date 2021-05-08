@@ -35,13 +35,15 @@ struct ContentView: View {
                                     .font(.system(size: 40))
                                 Text("Tornado")
                                     .font(.largeTitle)
+                                    .frame(
+                                    minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             .background(Color.gray)
                             .opacity(0.8)
                             .cornerRadius(25)
-                            .fixedSize(horizontal: true, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-
+                           
+                           
                         }
                     )
                     
@@ -55,12 +57,16 @@ struct ContentView: View {
                                     .font(.system(size: 40))
                                 Text("Wildfire")
                                     .font(.largeTitle)
+                                    .frame(
+                                    minWidth:/*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,
+                                    maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             .background(Color.gray)
                             .opacity(0.8)
                             .cornerRadius(25)
-                            .fixedSize(horizontal: true, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                           
+                        
 
 
                         })
@@ -74,13 +80,13 @@ struct ContentView: View {
                                     .font(.system(size: 40))
                                 Text("Earthquake")
                                     .font(.largeTitle)
+                                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,  maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             .background(Color.gray)
                             .opacity(0.8)
                             .cornerRadius(25)
-                            .fixedSize(horizontal: true, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-
+                         
                         })
                     Spacer()
                     NavigationLink(
@@ -99,12 +105,13 @@ struct ContentView: View {
                                 Text("Volcano")
                                     .font(.largeTitle)
                                     .offset(y: 10)
+                                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,  maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
                             .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
                             .background(Color.gray)
                             .opacity(0.8)
                             .cornerRadius(25)
-                            .fixedSize(horizontal: true, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                           
 
 
                         })
