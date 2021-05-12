@@ -24,7 +24,6 @@ struct ContentView: View {
                             .renderingMode(.template)
                             .font(.system(size: 30))
                             .offset( y:-75)
-                            
                     }
                     
                     NavigationLink(
@@ -36,9 +35,18 @@ struct ContentView: View {
                                     .font(.system(size: 30))
                                 Text("Tornado")
                                     .font(.largeTitle)
+                                    .frame(
+                                    minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
-                            
-                        })
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .background(Color.gray)
+                            .opacity(0.8)
+                            .cornerRadius(25)
+                           
+                           
+                        }
+                    )
+                    
                     Spacer()
                     NavigationLink(
                         destination: Text("Destination"),
@@ -49,8 +57,18 @@ struct ContentView: View {
                                     .font(.system(size: 30))
                                 Text("Wildfire")
                                     .font(.largeTitle)
+                                    .frame(
+                                    minWidth:/*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,
+                                    maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
-                            
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .background(Color.gray)
+                            .opacity(0.8)
+                            .cornerRadius(25)
+                           
+                        
+
+
                         })
                     Spacer()
                     NavigationLink(
@@ -62,7 +80,13 @@ struct ContentView: View {
                                     .font(.system(size: 30))
                                 Text("Earthquake")
                                     .font(.largeTitle)
+                                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,  maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                             }
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .background(Color.gray)
+                            .opacity(0.8)
+                            .cornerRadius(25)
+                         
                         })
                     Spacer()
                     NavigationLink(
@@ -78,16 +102,22 @@ struct ContentView: View {
                                         .font(.system(size: 25))
                                         .offset(y: -15)
                                 }
-                                
                                 Text("Volcano")
                                     .font(.largeTitle)
-                                    .offset(y: -3)
-                                
+                                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,  maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+
                             }
+                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .background(Color.gray)
+                            .opacity(0.8)
+                            .cornerRadius(25)
+                           
+
+
                         })
                     Spacer()
                 }
-            }
+           }
         }
         .buttonStyle(PlainButtonStyle())
     }
