@@ -27,7 +27,7 @@ struct ContentView: View {
                     }
                     
                     NavigationLink(
-                        destination: Text("Destination"),
+                        destination: SurvivalSelection(disaster: "Tornado"),
                         label: {
                             HStack{
                                 Image(systemName: "tornado")
@@ -42,14 +42,12 @@ struct ContentView: View {
                             .background(Color.gray)
                             .opacity(0.8)
                             .cornerRadius(25)
-                           
-                           
                         }
                     )
                     
                     Spacer()
                     NavigationLink(
-                        destination: Text("Destination"),
+                        destination: SurvivalSelection(disaster: "Wildfire"),
                         label: {
                             HStack{
                                 Image(systemName: "flame.fill")
@@ -65,14 +63,10 @@ struct ContentView: View {
                             .background(Color.gray)
                             .opacity(0.8)
                             .cornerRadius(25)
-                           
-                        
-
-
                         })
                     Spacer()
                     NavigationLink(
-                        destination: Text("Destination"),
+                        destination: SurvivalSelection(disaster: "Earthquake"),
                         label: {
                             HStack{
                                 Image(systemName: "waveform.path.ecg")
@@ -90,7 +84,7 @@ struct ContentView: View {
                         })
                     Spacer()
                     NavigationLink(
-                        destination: Text("Destination"),
+                        destination: SurvivalSelection(disaster: "Volcano"),
                         label: {
                             HStack{
                                 VStack{
@@ -111,9 +105,6 @@ struct ContentView: View {
                             .background(Color.gray)
                             .opacity(0.8)
                             .cornerRadius(25)
-                           
-
-
                         })
                     Spacer()
                 }
