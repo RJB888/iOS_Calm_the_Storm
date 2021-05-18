@@ -9,12 +9,13 @@ import SwiftUI
 import CoreLocation
 
 struct MapView: View {
+    var disaster: String
     var body: some View {
         NavigationView{
             ZStack{
                 Color.Ivory.ignoresSafeArea(.all)
             VStack{
-                Text("Safe Area Map")
+                Text("\(disaster) Safe Areas")
                     .font(.custom("Avenir", size: 30))
                     .bold()
                     .offset( y:-80)
@@ -37,7 +38,7 @@ CLLocationCoordinate2D(latitude: 47.6848, longitude: -122.1883))
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView()
+        MapView(disaster: "Temp")
             .preferredColorScheme(.light)
     }
 }

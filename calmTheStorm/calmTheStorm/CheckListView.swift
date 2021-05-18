@@ -8,12 +8,13 @@
 import SwiftUI
 
 struct CheckListView: View{
+    var disaster: String
     var body: some View{
         ZStack{
             Color.Ivory.ignoresSafeArea(.all)
             
             VStack{
-            Text("Survival Kit")
+            Text("\(disaster) Survival Kit")
                 .font(.custom("Avenir", size: 30))
                 .bold()
                 .padding()
@@ -32,6 +33,6 @@ struct CheckListView: View{
 
 struct CheckList_Previews: PreviewProvider{
     static var previews: some View{
-        CheckListView()
+        CheckListView(disaster: "Temp")
     }
 }
