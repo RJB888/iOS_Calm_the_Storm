@@ -21,6 +21,7 @@
 		3F817D74263E468900F54B87 /* CheckListData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F817D73263E468900F54B87 /* CheckListData.swift */; };
 		3F817D79263E46C600F54B87 /* CheckListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F817D78263E46C600F54B87 /* CheckListItem.swift */; };
 		3F817D7E263E490700F54B87 /* CheckListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F817D7D263E490700F54B87 /* CheckListView.swift */; };
+		3F91CE6C26548F3E00CFC4DA /* SurvivalInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F91CE6B26548F3E00CFC4DA /* SurvivalInfoView.swift */; };
 		3FEE9EAA262F46A900921602 /* SurvivalSelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FEE9EA9262F46A900921602 /* SurvivalSelection.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,6 +65,7 @@
 		3F817D73263E468900F54B87 /* CheckListData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListData.swift; sourceTree = "<group>"; };
 		3F817D78263E46C600F54B87 /* CheckListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListItem.swift; sourceTree = "<group>"; };
 		3F817D7D263E490700F54B87 /* CheckListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckListView.swift; sourceTree = "<group>"; };
+		3F91CE6B26548F3E00CFC4DA /* SurvivalInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivalInfoView.swift; sourceTree = "<group>"; };
 		3FEE9EA9262F46A900921602 /* SurvivalSelection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivalSelection.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +135,7 @@
 				3F817D32262D1A9800F54B87 /* CustomColors.swift */,
 				3FEE9EA9262F46A900921602 /* SurvivalSelection.swift */,
 				3F817D69263E3FE900F54B87 /* Survival_kit.swift */,
+				3F91CE6B26548F3E00CFC4DA /* SurvivalInfoView.swift */,
 				3F817D6E263E444800F54B87 /* Checkboxes.swift */,
 				3F817D73263E468900F54B87 /* CheckListData.swift */,
 				3F817D78263E46C600F54B87 /* CheckListItem.swift */,
@@ -314,6 +317,7 @@
 				3F817D7E263E490700F54B87 /* CheckListView.swift in Sources */,
 				3F817D6A263E3FE900F54B87 /* Survival_kit.swift in Sources */,
 				3F55959E264F79A60007799C /* Map.swift in Sources */,
+				3F91CE6C26548F3E00CFC4DA /* SurvivalInfoView.swift in Sources */,
 				3F559599264F78E00007799C /* MapView.swift in Sources */,
 				1980B8642629E31000B1AA13 /* calmTheStormApp.swift in Sources */,
 				3F817D79263E46C600F54B87 /* CheckListItem.swift in Sources */,
