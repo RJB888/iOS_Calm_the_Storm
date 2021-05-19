@@ -27,13 +27,13 @@ struct MainDisasterInfo: View {
                 }
             }
             
-            if(DisasterInfo == "Volcano"){
+            if(DisasterInfo == "Earthquake"){
                 List(EarthquakeData){ Info in
                     infoRow(whichInfo: Info)
                 }
             }
             
-            if(DisasterInfo == "Earthquake"){
+            if(DisasterInfo == "Volcano"){
                 List(VolcanoData){ Info in
                     infoRow(whichInfo: Info)
                 }
