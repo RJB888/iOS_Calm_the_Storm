@@ -19,6 +19,7 @@ struct MainDisasterInfo: View {
                     .font(.custom("Avenir", size: 30))
                     .bold()
                     .padding()
+                    .offset( y:-27)
                 if(DisasterInfo == "Tornado"){
                     List(TornadoData){ Info in
                         infoRow(whichInfo: Info)
