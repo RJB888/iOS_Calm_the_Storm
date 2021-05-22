@@ -7,21 +7,24 @@
 import SwiftUI
 
 struct CheckView: View {
-    @State var isChecked: Bool = false
-    var title:String
-    func toggle(){isChecked = !isChecked;}
+    @ObservedObject var kitItem : CheckListItem
+    
     var body: some View{
-        Button(action: toggle){
-            HStack{
-                Image(systemName: isChecked ? "checkmark.square": "square")
-                Text(title)
-            }
-         }
+        let extraText = String(kitItem.isChecked);
+        VStack{
+            Text(extraText)
+            Button(action: {kitItem.toggle();}){
+                HStack{
+                    Image(systemName: kitItem.isChecked ? "checkmark.square": "square")
+                    Text(kitItem.title)
+                }
+             }
+        }
      }
 }
 
 struct CheckView_Previews: PreviewProvider{
     static var previews: some View{
-        CheckView(title: "Title")
+        CheckView(kitItem:CheckListItem(title: "Test"))
     }
 }

@@ -8,6 +8,16 @@
 import SwiftUI
 
 struct ContentView: View {
+//    let realmObj:Realm
+//    init() {
+//        do {
+//          realmObj = try Realm()
+//        } catch let error {
+//          // Handle error
+//          fatalError("Failed to open Realm. Error: \(error.localizedDescription)")
+//        }
+//    }
+
     var body: some View {
         
         NavigationView{
@@ -111,6 +121,8 @@ struct ContentView: View {
            }
         }
         .buttonStyle(PlainButtonStyle())
+        //.environmentObject(DBHelper(realm: realmObj))
+        
     }
 }
 
