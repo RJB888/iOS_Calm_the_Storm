@@ -18,7 +18,7 @@ struct infoRow: View{
     var body: some View{
         HStack{
             Text(" \(whichInfo.info)")
-                .font(.custom("Avenir", size: 22))
+                .font(.custom("Avenir", size: 18))
         }
     }
 }
