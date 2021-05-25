@@ -19,7 +19,6 @@ struct ContentView: View {
                             .font(.custom("Avenir", size: 30))
                             .bold()
                             .offset( y:-70)
-                        
                         Image(systemName: "cloud.sun.fill")
                             .renderingMode(.template)
                             .font(.system(size: 30))

@@ -38,7 +38,7 @@ struct SurvivalSelection: View {
                         .bold()
                         .offset( y:0)
                     NavigationLink(
-                        destination: Text("Temp Survival info for \(disaster)"),//SurvivalInfoView(disaster: disaster),
+                        destination: MainDisasterInfo(DisasterInfo: disaster),
                         label: {
                             HStack{
                                 Image(systemName: "info.circle")
