@@ -35,17 +35,19 @@ struct ContentView: View {
                                     .font(.system(size: 30))
                                 Text("Tornado")
                                     .font(.largeTitle)
-                                    .frame(
-                                    minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .frame(width:175, height: 50)
+                                
                             }
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                            .background(Color.gray)
+                            //.padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .background(Color.Salmon)
                             .opacity(0.8)
                             .cornerRadius(25)
+                      
                         }
                     )
-                    
                     Spacer()
+                        .frame(height: 50)
+                    
                     NavigationLink(
                         destination: SurvivalSelection(disaster: "Wildfire"),
                         label: {
@@ -55,16 +57,16 @@ struct ContentView: View {
                                     .font(.system(size: 30))
                                 Text("Wildfire")
                                     .font(.largeTitle)
-                                    .frame(
-                                    minWidth:/*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,
-                                    maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .frame(width:175, height: 50)
                             }
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                            .background(Color.gray)
+                            //.padding(.all)
+                            .background(Color.Salmon)
                             .opacity(0.8)
                             .cornerRadius(25)
                         })
                     Spacer()
+                        .frame(height: 50)
+                    
                     NavigationLink(
                         destination: SurvivalSelection(disaster: "Earthquake"),
                         label: {
@@ -74,15 +76,17 @@ struct ContentView: View {
                                     .font(.system(size: 30))
                                 Text("Earthquake")
                                     .font(.largeTitle)
-                                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,  maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .frame(width:175, height: 50)
+                            
                             }
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                            .background(Color.gray)
+                            //.padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .background(Color.Salmon)
                             .opacity(0.8)
                             .cornerRadius(25)
                          
                         })
                     Spacer()
+                        .frame(height: 50)
                     NavigationLink(
                         destination: SurvivalSelection(disaster: "Volcano"),
                         label: {
@@ -98,15 +102,16 @@ struct ContentView: View {
                                 }
                                 Text("Volcano")
                                     .font(.largeTitle)
-                                    .frame(minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/,  maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .frame(width:175, height: 50)
 
                             }
-                            .padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                            .background(Color.gray)
+                            //.padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .background(Color.Salmon)
                             .opacity(0.8)
                             .cornerRadius(25)
                         })
                     Spacer()
+                        
                 }
            }
         }
