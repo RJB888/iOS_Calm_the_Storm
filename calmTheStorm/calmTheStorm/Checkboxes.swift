@@ -7,13 +7,14 @@
 import SwiftUI
 
 struct CheckView: View {
-    @ObservedObject var kitItem : CheckListItem
+    @EnvironmentObject var dbHelper:DBHelper
+    var kitItem : CheckListItem
     
     var body: some View{
         let extraText = String(kitItem.isChecked);
         VStack{
             Text(extraText)
-            Button(action: {kitItem.toggle();}){
+            Button(action: {dbHelper.toggleChecked(kitItem: kitItem)}){
                 HStack{
                     Image(systemName: kitItem.isChecked ? "checkmark.square": "square")
                     Text(kitItem.title)
@@ -25,6 +26,6 @@ struct CheckView: View {
 
 struct CheckView_Previews: PreviewProvider{
     static var previews: some View{
-        CheckView(kitItem:CheckListItem(title: "Test"))
+        CheckView(kitItem: sampleItem)
     }
 }

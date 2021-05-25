@@ -7,18 +7,19 @@
 
 import SwiftUI
 
-class CheckListItem: Identifiable, ObservableObject{
-    var id: UUID
-    @Published var isChecked: Bool
-    var title: String
-    
-    init(title: String){
-        self.id = UUID()
-        self.isChecked = false
-        self.title = title
-    }
-    
-    func toggle(){
-        self.isChecked = !self.isChecked;
+struct CheckListItem: Identifiable {
+    let id: Int
+    let isChecked: Bool
+    let title: String
+    let type: String
+}
+
+extension CheckListItem {
+    init(kitItemDB: KitItemDB){
+        id = kitItemDB.id
+        title = kitItemDB.title
+        isChecked = kitItemDB.isChecked
+        type = kitItemDB.type
     }
 }
+

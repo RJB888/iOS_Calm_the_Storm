@@ -6,18 +6,21 @@
 //
 
 import SwiftUI
+import RealmSwift
 
 struct ContentView: View {
-//    let realmObj:Realm
-//    init() {
-//        do {
-//          realmObj = try Realm()
-//        } catch let error {
-//          // Handle error
-//          fatalError("Failed to open Realm. Error: \(error.localizedDescription)")
-//        }
-//    }
-
+    //@EnvironmentObject var dbHelper: DBHelper
+    let realm:Realm
+    init() {
+        do {
+          realm = try Realm()
+        } catch let error {
+          // Handle error
+          fatalError("Failed to open Realm. Error: \(error.localizedDescription)")
+        }
+        let db = DBHelper(realm:realm)
+        db.initializeDB()
+    }
     var body: some View {
         
         NavigationView{
@@ -121,9 +124,10 @@ struct ContentView: View {
            }
         }
         .buttonStyle(PlainButtonStyle())
-        //.environmentObject(DBHelper(realm: realmObj))
+        .environmentObject(DBHelper(realm: realm))
         
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {
