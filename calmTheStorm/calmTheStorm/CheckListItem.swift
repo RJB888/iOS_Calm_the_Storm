@@ -7,8 +7,19 @@
 
 import SwiftUI
 
-struct CheckListItem: Identifiable{
-    var id: Int
-    var isChecked: Bool = false
-    var title: String
+struct CheckListItem: Identifiable {
+    let id: Int
+    let isChecked: Bool
+    let title: String
+    let type: String
 }
+
+extension CheckListItem {
+    init(kitItemDB: KitItemDB){
+        id = kitItemDB.id
+        title = kitItemDB.title
+        isChecked = kitItemDB.isChecked
+        type = kitItemDB.type
+    }
+}
+
