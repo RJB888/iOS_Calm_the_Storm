@@ -27,75 +27,71 @@ import SwiftUI
 struct SurvivalSelection: View {
     var disaster: String
     var body: some View {
-        
-            ZStack{
-                Color.Ivory.ignoresSafeArea(.all)
-                
-                VStack{
-                    Spacer()
-                    Text("\(disaster) Survival")
-                        .font(.custom("Avenir", size: 40))
-                        .bold()
-                        .offset( y:0)
-                    NavigationLink(
-                        destination: MainDisasterInfo(DisasterInfo: disaster),
-                        label: {
-                            HStack{
-                                Image(systemName: "info.circle")
-                                    .renderingMode(.template)
-                                    .font(.system(size: 30))
-                                Text("Survival Info")
-                                    .font(.largeTitle)
-                                    .font(.custom("Avenir", size: 28))
-                                    .frame(
-                                        minWidth: 0/*@END_MENU_TOKEN@*/, maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center)
-                            }
-                            .accentColor(.black)
-                            .padding(3)
-                            .offset( y:-50)
+        ZStack{
+            Color.Ivory.ignoresSafeArea(.all)
+            VStack{
+                Spacer()
+                Text("\(disaster) Survival")
+                    .font(.custom("Avenir", size: 40))
+                    .bold()
+                    .offset( y:0)
+                NavigationLink(
+                    destination: MainDisasterInfo(DisasterInfo: disaster),
+                    label: {
+                        HStack{
+                            Image(systemName: "info.circle")
+                                .renderingMode(.template)
+                                .font(.system(size: 30))
+                            Text("Survival Info")
+                                .font(.largeTitle)
+                                .font(.custom("Avenir", size: 28))
+                                .frame(
+                                    minWidth: 0/*@END_MENU_TOKEN@*/, maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center)
                         }
-                    )
-                  
-                    NavigationLink(
-                        destination: MapView(disaster: disaster),
-                        label: {
-                            HStack{
-                                Image(systemName: "map")
-                                    .renderingMode(.template)
-                                    .font(.system(size: 30))
-                                Text("Map Info")
-                                    .font(.largeTitle)
-                                    .font(.custom("Avenir", size: 28))
-                                    .frame(
-                                    minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            }
-                            .accentColor(.black)
-                            .padding(3)
-                            .offset( y:-50)
+                        .accentColor(.black)
+                        .padding(3)
+                        .offset( y:-50)
+                    }
+                )
+                NavigationLink(
+                    destination: MapView(disaster: disaster),
+                    label: {
+                        HStack{
+                            Image(systemName: "map")
+                                .renderingMode(.template)
+                                .font(.system(size: 30))
+                            Text("Map Info")
+                                .font(.largeTitle)
+                                .font(.custom("Avenir", size: 28))
+                                .frame(
+                                minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         }
-                    )
-         
-                    NavigationLink(
-                        destination: CheckListView(disaster: disaster),
-                        label: {
-                            HStack{
-                                Image(systemName: "cross.case.fill")
-                                    .renderingMode(.template)
-                                    .font(.system(size: 30))
-                                Text("Survival Kit")
-                                    .font(.largeTitle)
-                                    .font(.custom("Avenir", size: 28))
-                                    .frame(
-                                    minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                            }
-                            .accentColor(.black)
-                            .padding(3)
-                            .offset( y:-50)
+                        .accentColor(.black)
+                        .padding(3)
+                        .offset( y:-50)
+                    }
+                )
+                NavigationLink(
+                    destination: CheckListView(disaster: disaster),
+                    label: {
+                        HStack{
+                            Image(systemName: "cross.case.fill")
+                                .renderingMode(.template)
+                                .font(.system(size: 30))
+                            Text("Survival Kit")
+                                .font(.largeTitle)
+                                .font(.custom("Avenir", size: 28))
+                                .frame(
+                                minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
                         }
-                    )
-                    Spacer()
-              }
-            }
+                        .accentColor(.black)
+                        .padding(3)
+                        .offset( y:-50)
+                    }
+                )
+                Spacer()
+          }
+        }
         
   }
 }

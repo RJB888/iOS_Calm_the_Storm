@@ -20,15 +20,11 @@ struct Map: UIViewRepresentable {
     
     func makeUIView(context: Context) -> UIView {
         let view = UIView()
-        
-        
-        
         let map = MKMapView()
         
-        map.setRegion(MKCoordinateRegion(center: coordinate, span: MKCoordinateSpan(latitudeDelta: 0.8,
-                                                                                    longitudeDelta: 0.8)),
-            animated: true
-        )
+        map.setRegion(MKCoordinateRegion(center: coordinate,
+                                         span: MKCoordinateSpan(latitudeDelta: 0.8, longitudeDelta: 0.8)),
+                      animated: true)
         view.addSubview(map)
         
         map.translatesAutoresizingMaskIntoConstraints = false
@@ -81,8 +77,6 @@ struct Map: UIViewRepresentable {
         pin6.subtitle = "You are safe here"
         map.addAnnotation(pin6)
 
-        
-        
         return view
     }
     
