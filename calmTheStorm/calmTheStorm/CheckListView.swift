@@ -21,10 +21,30 @@ struct CheckListView: View{
                     .font(.custom("Avenir", size: 30))
                     .bold()
                     .padding()
+                    .offset( y:-27)
                 
                 //this can't be right... there has to be a better way.
                 if (disaster == "Tornado"){
                     List(dbHelper.tornadoArray){item in
+
+                       CheckView(kitItem:item)//.environmentObject(item)
+                        .font(.custom("Avenir", size: 22))
+                    }
+                } else if (disaster == "Wildfire"){
+                    List(dbHelper.wildfireArray){item in
+                       CheckView(kitItem:item)//.environmentObject(item)
+                        .font(.custom("Avenir", size: 22))
+                    }
+                }  else if (disaster == "Earthquake"){
+                    List(dbHelper.earthquakeArray){item in
+                       CheckView(kitItem:item)//.environmentObject(item)
+                        .font(.custom("Avenir", size: 22))
+                    }
+                }  else if (disaster == "Volcano"){
+                    List(dbHelper.volcanoArray){item in
+                       CheckView(kitItem:item)//.environmentObject(item)
+                        .font(.custom("Avenir", size: 22))
+
                        CheckView(kitItem:item)
                     }
                 } else if (disaster == "Wildfire"){
@@ -38,6 +58,7 @@ struct CheckListView: View{
                 }  else if (disaster == "Volcano"){
                     List(dbHelper.volcanoArray){item in
                        CheckView(kitItem:item)
+
                     }
                 }
             }

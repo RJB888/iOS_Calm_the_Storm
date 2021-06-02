@@ -18,7 +18,8 @@ struct MapView: View {
                 Text("\(disaster) Safe Areas")
                     .font(.custom("Avenir", size: 30))
                     .bold()
-                    .offset( y:-80)
+                    .padding()
+                    .offset( y:-120)
 
                 GeometryReader { proxy in
                     Map(coordinate:
