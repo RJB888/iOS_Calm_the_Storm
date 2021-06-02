@@ -26,6 +26,7 @@ struct CheckListView: View{
                 //this can't be right... there has to be a better way.
                 if (disaster == "Tornado"){
                     List(dbHelper.tornadoArray){item in
+
                        CheckView(kitItem:item)//.environmentObject(item)
                         .font(.custom("Avenir", size: 22))
                     }
@@ -43,6 +44,21 @@ struct CheckListView: View{
                     List(dbHelper.volcanoArray){item in
                        CheckView(kitItem:item)//.environmentObject(item)
                         .font(.custom("Avenir", size: 22))
+
+                       CheckView(kitItem:item)
+                    }
+                } else if (disaster == "Wildfire"){
+                    List(dbHelper.wildfireArray){item in
+                       CheckView(kitItem:item)
+                    }
+                }  else if (disaster == "Earthquake"){
+                    List(dbHelper.earthquakeArray){item in
+                       CheckView(kitItem:item)
+                    }
+                }  else if (disaster == "Volcano"){
+                    List(dbHelper.volcanoArray){item in
+                       CheckView(kitItem:item)
+
                     }
                 }
             }
@@ -51,8 +67,6 @@ struct CheckListView: View{
         }
     }
 }
-
-    
 
 struct CheckList_Previews: PreviewProvider{
     static var previews: some View{

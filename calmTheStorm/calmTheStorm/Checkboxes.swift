@@ -11,13 +11,12 @@ struct CheckView: View {
     var kitItem : CheckListItem
     
     var body: some View{
-        let extraText = String(kitItem.isChecked);
         VStack{
-            Text(extraText)
             Button(action: {dbHelper.toggleChecked(kitItem: kitItem)}){
                 HStack{
                     Image(systemName: kitItem.isChecked ? "checkmark.square": "square")
                     Text(kitItem.title)
+                        .font(.custom("Avenir", size: 18))
                 }
              }
         }

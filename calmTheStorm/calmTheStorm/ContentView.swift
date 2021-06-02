@@ -9,7 +9,6 @@ import SwiftUI
 import RealmSwift
 
 struct ContentView: View {
-    //@EnvironmentObject var dbHelper: DBHelper
     let realm:Realm
     init() {
         do {
@@ -22,8 +21,7 @@ struct ContentView: View {
         db.initializeDB()
     }
     var body: some View {
-        
-        NavigationView{
+        NavigationView {
            ZStack{
                 Color.Ivory.ignoresSafeArea(.all)
                 VStack{
@@ -51,6 +49,7 @@ struct ContentView: View {
                                     .frame(width:150, height: 50)
                                 
                             }
+
                             .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 15))
                             .background(Color.Salmon)
                             .opacity(0.8)
@@ -60,6 +59,11 @@ struct ContentView: View {
                                             .stroke(Color.black, lineWidth: 2.5)
                                     )
                       
+
+                            .background(Color.Salmon)
+                            .opacity(0.8)
+                            .cornerRadius(25)
+
                         }
                     )
                     Spacer()
@@ -77,7 +81,9 @@ struct ContentView: View {
                                     .fixedSize(horizontal: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                                     .frame(width:150, height: 50)
                             }
+
                             .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 15))
+
                             .background(Color.Salmon)
                             .opacity(0.8)
                             .cornerRadius(20)
@@ -103,6 +109,7 @@ struct ContentView: View {
                                     .frame(width:150, height: 50)
                             
                             }
+
                             .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 15))
                             .background(Color.Salmon)
                             .opacity(0.8)
@@ -134,6 +141,7 @@ struct ContentView: View {
                                     .frame(width:150, height: 50)
 
                             }
+
                             .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 15))
                             .background(Color.Salmon)
                             .opacity(0.8)
@@ -150,7 +158,6 @@ struct ContentView: View {
         }
         .buttonStyle(PlainButtonStyle())
         .environmentObject(DBHelper(realm: realm))
-        
     }
     
 }
