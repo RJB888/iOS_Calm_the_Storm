@@ -47,10 +47,11 @@ struct ContentView: View {
                                     .font(.system(size: 30))
                                 Text("Tornado")
                                     .font(.largeTitle)
+                                    .fixedSize(horizontal: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                                     .frame(width:150, height: 50)
                                 
                             }
-                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 0))
+                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 15))
                             .background(Color.Salmon)
                             .opacity(0.8)
                             .cornerRadius(20)
@@ -73,9 +74,10 @@ struct ContentView: View {
                                     .font(.system(size: 30))
                                 Text("Wildfire")
                                     .font(.largeTitle)
+                                    .fixedSize(horizontal: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                                     .frame(width:150, height: 50)
                             }
-                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 0))
+                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 15))
                             .background(Color.Salmon)
                             .opacity(0.8)
                             .cornerRadius(20)
@@ -96,10 +98,12 @@ struct ContentView: View {
                                     .font(.system(size: 30))
                                 Text("Earthquake")
                                     .font(.largeTitle)
+                                    .fixedSize(horizontal: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
+                                    
                                     .frame(width:150, height: 50)
                             
                             }
-                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 0))
+                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 15))
                             .background(Color.Salmon)
                             .opacity(0.8)
                             .cornerRadius(20)
@@ -126,10 +130,11 @@ struct ContentView: View {
                                 }
                                 Text("Volcano")
                                     .font(.largeTitle)
+                                    .fixedSize(horizontal: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
                                     .frame(width:150, height: 50)
 
                             }
-                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 0))
+                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 15))
                             .background(Color.Salmon)
                             .opacity(0.8)
                             .cornerRadius(20)
