@@ -32,11 +32,14 @@ struct SurvivalSelection: View {
                 Color.Ivory.ignoresSafeArea(.all)
                 
                 VStack{
-                    Spacer()
+                    //Spacer()
                     Text("\(disaster) Survival")
-                        .font(.custom("Avenir", size: 40))
+                        .font(.custom("Avenir", size: 30))
                         .bold()
-                        .offset( y:0)
+                        .offset(y: -20)
+                    Spacer()
+                        .frame(height: 50)
+                    
                     NavigationLink(
                         destination: MainDisasterInfo(DisasterInfo: disaster),
                         label: {
@@ -44,18 +47,26 @@ struct SurvivalSelection: View {
                                 Image(systemName: "info.circle")
                                     .renderingMode(.template)
                                     .font(.system(size: 30))
+                                    .foregroundColor(.black)
                                 Text("Survival Info")
+                                    .foregroundColor(.black)
                                     .font(.largeTitle)
-                                    .font(.custom("Avenir", size: 28))
-                                    .frame(
-                                        minWidth: 0/*@END_MENU_TOKEN@*/, maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center)
+                                    .frame(width:170, height: 50)
                             }
-                            .accentColor(.black)
-                            .padding(3)
-                            .offset( y:-50)
+                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 0))
+                            .background(Color.Salmon)
+                            .opacity(0.8)
+                            .cornerRadius(20)
+                            .overlay(
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .stroke(Color.black, lineWidth: 2.5)
+                                    )
                         }
                     )
-                  
+                    
+                    Spacer()
+                        .frame(height: 80)
+                    
                     NavigationLink(
                         destination: MapView(disaster: disaster),
                         label: {
@@ -63,18 +74,26 @@ struct SurvivalSelection: View {
                                 Image(systemName: "map")
                                     .renderingMode(.template)
                                     .font(.system(size: 30))
+                                    .foregroundColor(.black)
                                 Text("Map Info")
+                                    .foregroundColor(.black)
                                     .font(.largeTitle)
-                                    .font(.custom("Avenir", size: 28))
-                                    .frame(
-                                    minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .frame(width:170, height: 50)
                             }
-                            .accentColor(.black)
-                            .padding(3)
-                            .offset( y:-50)
+                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 0))
+                            .background(Color.Salmon)
+                            .opacity(0.8)
+                            .cornerRadius(20)
+                            .overlay(
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .stroke(Color.black, lineWidth: 2.5)
+                                    )
                         }
                     )
          
+                    Spacer()
+                        .frame(height: 80)
+                    
                     NavigationLink(
                         destination: CheckListView(disaster: disaster),
                         label: {
@@ -82,15 +101,20 @@ struct SurvivalSelection: View {
                                 Image(systemName: "cross.case.fill")
                                     .renderingMode(.template)
                                     .font(.system(size: 30))
+                                    .foregroundColor(.black)
                                 Text("Survival Kit")
+                                    .foregroundColor(.black)
                                     .font(.largeTitle)
-                                    .font(.custom("Avenir", size: 28))
-                                    .frame(
-                                    minWidth: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxWidth: 700, minHeight: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/, maxHeight: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                                    .frame(width:170, height: 50)
                             }
-                            .accentColor(.black)
-                            .padding(3)
-                            .offset( y:-50)
+                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 0))
+                            .background(Color.Salmon)
+                            .opacity(0.8)
+                            .cornerRadius(20)
+                            .overlay(
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .stroke(Color.black, lineWidth: 2.5)
+                                    )
                         }
                     )
                     Spacer()

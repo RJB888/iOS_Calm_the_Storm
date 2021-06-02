@@ -47,13 +47,17 @@ struct ContentView: View {
                                     .font(.system(size: 30))
                                 Text("Tornado")
                                     .font(.largeTitle)
-                                    .frame(width:175, height: 50)
+                                    .frame(width:150, height: 50)
                                 
                             }
-                            //.padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 0))
                             .background(Color.Salmon)
                             .opacity(0.8)
-                            .cornerRadius(25)
+                            .cornerRadius(20)
+                            .overlay(
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .stroke(Color.black, lineWidth: 2.5)
+                                    )
                       
                         }
                     )
@@ -69,12 +73,16 @@ struct ContentView: View {
                                     .font(.system(size: 30))
                                 Text("Wildfire")
                                     .font(.largeTitle)
-                                    .frame(width:175, height: 50)
+                                    .frame(width:150, height: 50)
                             }
-                            //.padding(.all)
+                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 0))
                             .background(Color.Salmon)
                             .opacity(0.8)
-                            .cornerRadius(25)
+                            .cornerRadius(20)
+                            .overlay(
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .stroke(Color.black, lineWidth: 2.5)
+                                    )
                         })
                     Spacer()
                         .frame(height: 50)
@@ -88,13 +96,17 @@ struct ContentView: View {
                                     .font(.system(size: 30))
                                 Text("Earthquake")
                                     .font(.largeTitle)
-                                    .frame(width:175, height: 50)
+                                    .frame(width:150, height: 50)
                             
                             }
-                            //.padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 0))
                             .background(Color.Salmon)
                             .opacity(0.8)
-                            .cornerRadius(25)
+                            .cornerRadius(20)
+                            .overlay(
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .stroke(Color.black, lineWidth: 2.5)
+                                    )
                          
                         })
                     Spacer()
@@ -106,21 +118,25 @@ struct ContentView: View {
                                 VStack{
                                     Image(systemName: "smoke.fill")
                                         .renderingMode(.template)
-                                        .font(.system(size: 30))
-                                        .offset(x: -9, y: -8)
+                                        .font(.system(size: 25))
+                                        .offset(x: -9, y: -4)
                                     Image(systemName: "triangle")
                                         .font(.system(size: 25))
                                         .offset(y: -15)
                                 }
                                 Text("Volcano")
                                     .font(.largeTitle)
-                                    .frame(width:175, height: 50)
+                                    .frame(width:150, height: 50)
 
                             }
-                            //.padding(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                            .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 0))
                             .background(Color.Salmon)
                             .opacity(0.8)
-                            .cornerRadius(25)
+                            .cornerRadius(20)
+                            .overlay(
+                                        RoundedRectangle(cornerRadius: 20)
+                                            .stroke(Color.black, lineWidth: 2.5)
+                                    )
                         })
                     Spacer()
                         
