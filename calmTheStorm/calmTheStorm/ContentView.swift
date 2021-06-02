@@ -58,11 +58,6 @@ struct ContentView: View {
                                         RoundedRectangle(cornerRadius: 20)
                                             .stroke(Color.black, lineWidth: 2.5)
                                     )
-                      
-
-                            .background(Color.Salmon)
-                            .opacity(0.8)
-                            .cornerRadius(25)
 
                         }
                     )
