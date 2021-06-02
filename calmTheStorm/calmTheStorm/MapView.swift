@@ -22,7 +22,7 @@ struct MapView: View {
 
                 GeometryReader { proxy in
                     Map(coordinate:
-CLLocationCoordinate2D(latitude: 47.6848, longitude: -122.1883))
+                        CLLocationCoordinate2D(latitude: 47.6848, longitude: -122.1883))
                         .frame(width: proxy.size.width,
                                height: proxy.size.height,
                                alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
