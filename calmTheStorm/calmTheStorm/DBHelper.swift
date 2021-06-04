@@ -91,6 +91,14 @@ extension DBHelper {
             print(error.localizedDescription)
         }
     }
+    func addByUser(title: String, type:String){
+        if (title == ""){
+            return
+        }else {
+            create(title: title, type: type);
+        }
+    }
+    
     func toggleChecked(kitItem: CheckListItem){
         objectWillChange.send()
         do {
