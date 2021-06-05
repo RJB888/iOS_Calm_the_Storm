@@ -116,5 +116,6 @@ extension DBHelper {
     }
     
     //TODO: add function for deleting user-created entries
+//            still need to sort out how to make a delete button function separately from the checkbox.
     
 }

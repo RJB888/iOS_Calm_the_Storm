@@ -17,6 +17,12 @@ struct CheckView: View {
                     Image(systemName: kitItem.isChecked ? "checkmark.square": "square")
                     Text(kitItem.title)
                         .font(.custom("Avenir", size: 18))
+//                   **** The delete function still isn't working - need to separate button clicability ****
+//                    if (!kitItem.preGenerated) {
+//                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+//                            Text("DELETE").font(.custom("Avenir", size: 14))
+//                        })
+//                    }
                 }
              }
         }

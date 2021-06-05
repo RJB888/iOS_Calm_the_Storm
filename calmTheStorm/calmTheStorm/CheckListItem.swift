@@ -12,6 +12,7 @@ struct CheckListItem: Identifiable {
     let isChecked: Bool
     let title: String
     let type: String
+    let preGenerated: Bool
 }
 
 extension CheckListItem {
@@ -20,6 +21,7 @@ extension CheckListItem {
         title = kitItemDB.title
         isChecked = kitItemDB.isChecked
         type = kitItemDB.type
+        preGenerated = kitItemDB.preGenerated
     }
 }
 
