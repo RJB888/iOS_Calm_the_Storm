@@ -18,7 +18,6 @@
 		1980B86B2629E31200B1AA13 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1980B86A2629E31200B1AA13 /* Preview Assets.xcassets */; };
 		1980B8812629E31300B1AA13 /* calmTheStormUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1980B8802629E31300B1AA13 /* calmTheStormUITests.swift */; };
 		3F559599264F78E00007799C /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F559598264F78E00007799C /* MapView.swift */; };
-		3F55959E264F79A60007799C /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F55959D264F79A60007799C /* Map.swift */; };
 		3F817D33262D1A9800F54B87 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F817D32262D1A9800F54B87 /* CustomColors.swift */; };
 		3F817D6A263E3FE900F54B87 /* Survival_kit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F817D69263E3FE900F54B87 /* Survival_kit.swift */; };
 		3F817D6F263E444800F54B87 /* Checkboxes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F817D6E263E444800F54B87 /* Checkboxes.swift */; };
@@ -66,7 +65,6 @@
 		1980B8802629E31300B1AA13 /* calmTheStormUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calmTheStormUITests.swift; sourceTree = "<group>"; };
 		1980B8822629E31300B1AA13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F559598264F78E00007799C /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
-		3F55959D264F79A60007799C /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		3F817D32262D1A9800F54B87 /* CustomColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
 		3F817D69263E3FE900F54B87 /* Survival_kit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Survival_kit.swift; sourceTree = "<group>"; };
 		3F817D6E263E444800F54B87 /* Checkboxes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Checkboxes.swift; sourceTree = "<group>"; };
@@ -152,7 +150,6 @@
 				3F817D78263E46C600F54B87 /* CheckListItem.swift */,
 				3F817D7D263E490700F54B87 /* CheckListView.swift */,
 				3F559598264F78E00007799C /* MapView.swift */,
-				3F55959D264F79A60007799C /* Map.swift */,
 				3F89896226537DC300B57D26 /* DisasterInfoData.swift */,
 				3F89896426537F5D00B57D26 /* DisasterType.swift */,
 				3F89896A265591CA00B57D26 /* MainDisasterInfo.swift */,
@@ -343,7 +340,6 @@
 				3F817D6A263E3FE900F54B87 /* Survival_kit.swift in Sources */,
 				3F89896526537F5D00B57D26 /* DisasterType.swift in Sources */,
 				1951D5A8265883580023D5CF /* KitItemDB.swift in Sources */,
-				3F55959E264F79A60007799C /* Map.swift in Sources */,
 				3F559599264F78E00007799C /* MapView.swift in Sources */,
 				1980B8642629E31000B1AA13 /* calmTheStormApp.swift in Sources */,
 				3F817D79263E46C600F54B87 /* CheckListItem.swift in Sources */,
