@@ -26,46 +26,52 @@ struct CheckListView: View{
                     .font(.custom("Avenir", size: 30))
                     .bold()
                     .padding()
-                    .offset( y:-27)
-
+                    .offset( y:-30)
+                
                 Form{
-                    Section {
-                        HStack{
-                            TextField("New Item", text: $newItem)
-                            Button(action: { addUserItem()}, label: {
-                                Text("ADD")
-                            }).buttonStyle(PlainButtonStyle())
-                        }
+                    HStack{
+                        TextField("New Item", text: $newItem)
+                        Button(action: { addUserItem()}, label: {
+                            Text("ADD")
+                        }).buttonStyle(PlainButtonStyle())
                     }
-                    Section {
-                        if (disaster == "Tornado"){
-                            List(dbHelper.tornadoArray){item in
-                                CheckView(kitItem:item)
+                }
+                .frame(width: 440, height:110, alignment: .top)
+                .offset( y:-30)
+                
+                
+                
+                Section {
+                    if (disaster == "Tornado"){
+                        List(dbHelper.tornadoArray){item in
+                            CheckView(kitItem:item)
                                 .font(.custom("Avenir", size: 18))
-                            }
-                        } else if (disaster == "Wildfire"){
-                            List(dbHelper.wildfireArray){item in
-                               CheckView(kitItem:item)
+                        }
+                    } else if (disaster == "Wildfire"){
+                        List(dbHelper.wildfireArray){item in
+                            CheckView(kitItem:item)
                                 .font(.custom("Avenir", size: 18))
-                            }
-                        }  else if (disaster == "Earthquake"){
-                            List(dbHelper.earthquakeArray){item in
-                               CheckView(kitItem:item)
+                        }
+                    }  else if (disaster == "Earthquake"){
+                        List(dbHelper.earthquakeArray){item in
+                            CheckView(kitItem:item)
                                 .font(.custom("Avenir", size: 18))
-                            }
-                        }  else if (disaster == "Volcano"){
-                            List(dbHelper.volcanoArray){item in
-                               CheckView(kitItem:item)
+                        }
+                    }  else if (disaster == "Volcano"){
+                        List(dbHelper.volcanoArray){item in
+                            CheckView(kitItem:item)
                                 .font(.custom("Avenir", size: 18))
-                            }
                         }
                     }
                 }
-        }.colorMultiply(Color.Ivory)
+                
+                
+            }.colorMultiply(Color.Ivory)
             .font(.custom("Avenir", size: 18))
         }
     }
 }
+
 
 struct CheckList_Previews: PreviewProvider{
     static var previews: some View{
