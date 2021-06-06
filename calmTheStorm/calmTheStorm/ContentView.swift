@@ -125,10 +125,10 @@ struct ContentView: View {
                                     Image(systemName: "smoke.fill")
                                         .renderingMode(.template)
                                         .font(.system(size: 25))
-                                        .offset(x: -9, y: -4)
+                                        .offset(x: -6, y: 3)
                                     Image(systemName: "triangle")
                                         .font(.system(size: 25))
-                                        .offset(y: -15)
+                                        .offset(x: 3, y: -7)
                                 }
                                 Text("Volcano")
                                     .font(.largeTitle)
