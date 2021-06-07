@@ -11,7 +11,8 @@ var sampleItem = CheckListItem(
     id: 2,
     isChecked: false,
     title: "Sample kit item",
-    type: "Tornado")
+    type: "Tornado",
+    preGenerated: false)
 
 let volcanoArray = [sampleItem]
 

@@ -91,6 +91,14 @@ extension DBHelper {
             print(error.localizedDescription)
         }
     }
+    func addByUser(title: String, type:String){
+        if (title == ""){
+            return
+        }else {
+            create(title: title, type: type);
+        }
+    }
+    
     func toggleChecked(kitItem: CheckListItem){
         objectWillChange.send()
         do {
@@ -108,5 +116,6 @@ extension DBHelper {
     }
     
     //TODO: add function for deleting user-created entries
+//            still need to sort out how to make a delete button function separately from the checkbox.
     
 }
