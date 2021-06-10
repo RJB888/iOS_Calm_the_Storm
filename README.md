@@ -125,4 +125,4 @@ The engagement of our users would typically be a user that access our app 2-5 ti
 
 ## Stretch features
 
-Some future considerations we may have is some kind of emergency response integration that will notify emergency services that you are in distress. A feature that allows our My kit items to be checked off as well.
+Features that we would like to see implemented are allowing the user to edit and delete items they have added to the app, and having different locations for each disaster type on the maps feature. Some future considerations we may have is some kind of integration for receiving severe weather alerts, as well as one that will notify emergency services that you are in distress.
