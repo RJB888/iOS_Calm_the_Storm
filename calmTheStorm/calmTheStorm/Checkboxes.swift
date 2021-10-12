@@ -22,7 +22,7 @@ struct CheckView: View {
                  }
                 Spacer()
                 if (!kitItem.preGenerated) {
-                    Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                    Button(action: {dbHelper.deleteKitItem(kitItem: kitItem)}, label: {
                         Text("DELETE").font(.custom("Avenir", size: 14))
                     })
                 }
