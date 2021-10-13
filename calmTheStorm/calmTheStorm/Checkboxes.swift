@@ -12,19 +12,22 @@ struct CheckView: View {
     
     var body: some View{
         VStack{
-            Button(action: {dbHelper.toggleChecked(kitItem: kitItem)}){
-                HStack{
-                    Image(systemName: kitItem.isChecked ? "checkmark.square": "square")
-                    Text(kitItem.title)
-                        .font(.custom("Avenir", size: 18))
-//                   **** The delete function still isn't working - need to separate button clicability ****
-//                    if (!kitItem.preGenerated) {
-//                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-//                            Text("DELETE").font(.custom("Avenir", size: 14))
-//                        })
-//                    }
+            HStack{
+                Button(action: {dbHelper.toggleChecked(kitItem: kitItem)}){
+                    HStack{
+                        Image(systemName: kitItem.isChecked ? "checkmark.square": "square")
+                        Text(kitItem.title)
+                            .font(.custom("Avenir", size: 18))
+                    }
+                 }
+                Spacer()
+                if (!kitItem.preGenerated) {
+                    Button(action: {dbHelper.deleteKitItem(kitItem: kitItem)}, label: {
+                        Text("DELETE").font(.custom("Avenir", size: 14))
+                    })
                 }
-             }
+            }
+            
         }
      }
 }

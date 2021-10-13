@@ -116,6 +116,19 @@ extension DBHelper {
     }
     
     //TODO: add function for deleting user-created entries
-//            still need to sort out how to make a delete button function separately from the checkbox.
-    
+    func deleteKitItem(kitItem: CheckListItem){
+        let itemID = kitItem.id
+        objectWillChange.send()
+        do {
+            let realm = try Realm()
+            let kitItemToDelete = realm.objects(KitItemDB.self)
+                    .filter("id = \(itemID)")
+            try realm.write{
+                realm.delete(kitItemToDelete)
+            }
+        }catch let error {
+            print(error.localizedDescription)
+        }
+    }
+
 }
