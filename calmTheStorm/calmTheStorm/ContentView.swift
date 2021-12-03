@@ -21,32 +21,41 @@ struct ContentView: View {
         db.initializeDB()
     }
     var body: some View {
+        
         NavigationView {
            ZStack{
                 Color.Ivory.ignoresSafeArea(.all)
                 VStack{
                     HStack{
                         Text("Calm The Storm")
-                            .font(.custom("Avenir", size: 30))
+                            .font(.custom("Avenir", size: 40))
                             .bold()
                             .offset( y:-70)
-                        Image(systemName: "cloud.sun.fill")
+                       Image(systemName: "cloud.sun.fill")
                             .renderingMode(.template)
-                            .font(.system(size: 30))
+                            .font(.system(size: 40))
                             .offset( y:-75)
+                            
                     }
+                    .offset( y:30)
+                    
+                    .padding(.init(top: 0, leading: 1, bottom: -8, trailing: 1))
+                  
                     
                     NavigationLink(
                         destination: SurvivalSelection(disaster: "Tornado"),
+                        
                         label: {
-                            HStack{
-                                Image(systemName: "tornado")
-                                    .renderingMode(.template)
-                                    .font(.system(size: 30))
+                            VStack{
+                                GifImage("Tornado1")
+                                    .frame(minWidth: 0, maxWidth: 180, minHeight: 0, maxHeight: 70)
+                                
+                                    .aspectRatio(contentMode: .fill)
+                                    .padding(.init(top: 20, leading: 1, bottom: -35, trailing: 1))
+                                    
                                 Text("Tornado")
                                     .font(.largeTitle)
-                                    .fixedSize(horizontal: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-                                    .frame(width:150, height: 50)
+                                    .offset(y:-35)
                                 
                             }
 
@@ -59,26 +68,27 @@ struct ContentView: View {
                                             .stroke(Color.black, lineWidth: 2.5)
                                     )
 
-                        }
-                    )
+                        })
+                        .padding()
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 10)
                     
                     NavigationLink(
                         destination: SurvivalSelection(disaster: "Wildfire"),
                         label: {
-                            HStack{
-                                Image(systemName: "flame.fill")
-                                    .renderingMode(.template)
-                                    .font(.system(size: 30))
+                            VStack{
+                                GifImage("Wildfire1")
+                                    .frame(minWidth: 0, maxWidth: 180, minHeight: 0, maxHeight: 70)
+                                    .aspectRatio(contentMode: .fill)
+                                    .padding(.init(top: 20, leading: 1, bottom: -35, trailing: 1))
+                                    
                                 Text("Wildfire")
                                     .font(.largeTitle)
-                                    .fixedSize(horizontal: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-                                    .frame(width:150, height: 50)
+                                    .offset(y:-35)
+                                
                             }
 
                             .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 15))
-
                             .background(Color.Salmon)
                             .opacity(0.8)
                             .cornerRadius(20)
@@ -86,23 +96,25 @@ struct ContentView: View {
                                         RoundedRectangle(cornerRadius: 20)
                                             .stroke(Color.black, lineWidth: 2.5)
                                     )
+
                         })
+                    
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 10)
                     
                     NavigationLink(
                         destination: SurvivalSelection(disaster: "Earthquake"),
                         label: {
-                            HStack{
-                                Image(systemName: "waveform.path.ecg")
-                                    .renderingMode(.template)
-                                    .font(.system(size: 30))
+                            VStack{
+                                GifImage("Eartquake1")
+                                    .frame(minWidth: 0, maxWidth: 180, minHeight: 0, maxHeight: 70)
+                                    .aspectRatio(contentMode: .fill)
+                                    .padding(.init(top: 20, leading: 1, bottom: -35, trailing: 1))
+                                    
                                 Text("Earthquake")
                                     .font(.largeTitle)
-                                    .fixedSize(horizontal: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-                                    
-                                    .frame(width:150, height: 50)
-                            
+                                    .offset(y:-35)
+                                
                             }
 
                             .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 15))
@@ -113,28 +125,24 @@ struct ContentView: View {
                                         RoundedRectangle(cornerRadius: 20)
                                             .stroke(Color.black, lineWidth: 2.5)
                                     )
-                         
+
                         })
+                        .padding()
                     Spacer()
-                        .frame(height: 50)
+                        .frame(height: 10)
                     NavigationLink(
                         destination: SurvivalSelection(disaster: "Volcano"),
                         label: {
-                            HStack{
-                                VStack{
-                                    Image(systemName: "smoke.fill")
-                                        .renderingMode(.template)
-                                        .font(.system(size: 25))
-                                        .offset(x: -6, y: 3)
-                                    Image(systemName: "triangle")
-                                        .font(.system(size: 25))
-                                        .offset(x: 3, y: -7)
-                                }
+                            VStack{
+                                GifImage("Volcano1")
+                                    .frame(minWidth: 0, maxWidth: 180, minHeight: 0, maxHeight: 70)
+                                    .aspectRatio(contentMode: .fill)
+                                    .padding(.init(top: 20, leading: 1, bottom: -35, trailing: 1))
+                                    
                                 Text("Volcano")
                                     .font(.largeTitle)
-                                    .fixedSize(horizontal: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/, vertical: /*@START_MENU_TOKEN@*/true/*@END_MENU_TOKEN@*/)
-                                    .frame(width:150, height: 50)
-
+                                    .offset(y:-35)
+                                
                             }
 
                             .padding(.init(top: 0, leading: 15, bottom: 0, trailing: 15))
@@ -145,10 +153,11 @@ struct ContentView: View {
                                         RoundedRectangle(cornerRadius: 20)
                                             .stroke(Color.black, lineWidth: 2.5)
                                     )
+
                         })
-                    Spacer()
-                        
+                    
                 }
+                .padding(.init(top: 0, leading: 1, bottom: 100, trailing: 1))
            }
         }
         .buttonStyle(PlainButtonStyle())
